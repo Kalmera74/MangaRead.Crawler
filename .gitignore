@@ -1,0 +1,22 @@
+# Build outputs
+/*/bin/
+/*/obj/
+
+# Visual Studio files
+/*/.vs/
+/*/.vscode/
+
+/.vs
+/.vscode
+
+# Database files
+*.db
+
+# Logs
+/*/logs/
+
+# Static files and folders
+/*/wwwroot/storage/
+
+# Node modules
+/node_modules/
