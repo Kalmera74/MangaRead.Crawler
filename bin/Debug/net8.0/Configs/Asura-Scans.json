@@ -1,0 +1,1506 @@
+{
+  "SiteType": "Static",
+  "RootUrl": "https://asura-scans.com/",
+  "ChapterRootUrl": "https://asura-scans.com/series/",
+  "QueryData": {
+    "TitleSelector": [
+      {
+        "Query": "//h1[contains(@class, 'entry-title')]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "DescriptionSelector": [
+      {
+        "Query": "//div[@class='entry-content entry-content-single']//p",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "CoverSelector": [
+      {
+        "Query": "//div[@itemprop='image']//img",
+        "Type": "Single",
+        "DataFrom": "DataSrc"
+      }
+    ],
+    "StatusSelector": [
+      {
+        "Query": "(//div[@class='status-value'])[1]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "TypeSelector": [
+      {
+        "Query": "//tbody/tr[1]/td[2]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "AuthorSelector": [
+      {
+        "Query": "//tbody/tr[3]/td[2]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "RatingSelector": [
+      {
+        "Query": "",
+        "Type": "None",
+        "DataFrom": "None"
+      }
+    ],
+    "GenreSelector": [
+      {
+        "Query": "//div[@class='seriestuheader']//a",
+        "Type": "Multi",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "ChapterLinksSelector": [
+      {
+        "Query": "//div[@id='chapterlist']//a",
+        "Type": "Multi",
+        "DataFrom": "Href"
+      }
+    ],
+    "ChapterTitlesSelector": [
+      {
+        "Query": "(//div[@id='chapterlist'])//span[@class='chapternum']",
+        "Type": "Multi",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "ChapterContentsSelector": [
+      {
+        "Query": "(//div[@id='readerarea'])//img",
+        "Type": "Multi",
+        "DataFrom": "DataSrc"
+      }
+    ]
+  },
+  "MangaPages": [
+    {
+      "Url": "https://asura-scans.com/series/the-art-of-reincarnation/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-frozen-player-returns/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/arcane-sniper/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-reincarnation-of-the-forbidden-archmage/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/magic-emperor/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/login-murim/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/regressing-with-the-kings-power/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-priest-of-corruption/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/cata-ne/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/reformation-of-the-deadbeat-noble/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/i-have-nine-quadrillion-simp-gold-coins/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/im-not-a-regressor/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/overgeared/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-unbeatable-dungeons-lazy-boss-monster/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/heavenly-grand-archive-young-master/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/light-of-arad-forerunner/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/from-goblin-to-goblin-god/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/eternally-regressing-knight/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-31st-piece-turns-the-tables/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/goblins-night/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/i-am-the-strongest-awakeners-recognized-by-all-of-the-worlds-cheat-masters/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/king-game/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/hardcore-leveling-warrior/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/bloodhounds-regression-instinct/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/terminally-ill-genius-dark-knight/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/eternal-club/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/greatest-estate-designer/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/solo-max-level-newbie/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/jkaisen/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/talent-swallowing-magician/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-extra-is-too-strong/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-dark-magician-transmigrates-after-66666-years/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-nebulas-civilization/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-devil-never-cries/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-knight-king-who-returned-with-a-god/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/expelled-hero-is-too-strong/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/loookism/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/heavenly-inquisition-sword/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/not-to-die/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/second-life-ranker/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/monarch-of-death/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/seoul-station-necromancer/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-youngest-son-of-a-conglomerate/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/maxed-out-leveling/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/oshi-no-ko/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/super-god-gene/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-world-after-the-end/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/how-to-use-a-returner/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/chronicles-of-the-demon/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-genius-assassin-who-takes-it-all/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-crown-prince-that-sells-medicine/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/surviving-the-game/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/genius-of-the-unique-lineage/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/reincarnated-escort-warrior/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/genius-corpse-collecting-warrior/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/killer-hero/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/my-exclusive-tower-guide/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/genius-martial-arts-trainer/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/logging-10000-years-into-the-future/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/pick-me-up-infinite-gacha/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/max-talent-player/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/mr-zombie/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/nano/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/irl-quest/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/return-of-the-disaster-class-hero/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/baek-xx/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-fangs-that-pierce-the-heart/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/solo-leveling-ragnarok/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-heavenly-demon-cant-live-a-normal-life/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/used-to-be-a-boss/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-warrior-ascends-from-the-rubble/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/regressor-of-the-fallen-family/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-counts-youngest-son-is-a-player/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/overpowered-sword/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/i-killed-an-academy-player/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/return-of-the-mount-hua-sect/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/transcension-academy/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/i-picked-a-hammer-to-save-the-world/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/tales-of-demons-and-gods/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/infinite-mage/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/sword-fanatic-wanders-through-the-night/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/superhuman-battlefield/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/wandering-warrior-of-wudang/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/weapon-maker/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-extra-academy-survival-guide/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/return-of-the-sss-class-ranker/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/manager-kim/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/genius-archers-streaming/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/hiding-out-in-an-apocalypse/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/ill-retire-after-saving-the-world/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/21st-century-retrogression/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/legend-of-the-northern-blade/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/orv/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/elced/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/i-am-the-fated-villain/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-ancient-sovereign-of-eternity/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/magic-academy-survival-guide/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/latna-saga-survival-of-a-sword-king/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/chronicles-of-the-martial-gods-return/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/reincarnator/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/i-contracted-myself/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/lord-of-money/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-constellation-that-returned-from-hell/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/absolute-regression/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/might-through-death/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/tax-reaper/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/necromancer-evolutionary-traits/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/get-schooled/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/martial-god-regressed-to-level-2/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/magic-academys-genius-blinker/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-indomitable-martial-king/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/myst-might-mayhem/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-maxed-out-player/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/level-up-with-skills/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/legendary-blacksmiths-vengeance/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/dragon-devouring-mage/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/tower-of-god/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-lord-of-coins/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/regressed-son-of-a-duke-is-an-assassin/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/return-of-the-unrivaled-spear-knight/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/questism/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/childhood-friend-of-the-zenith/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/raising-the-princess-after-her-death/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-tutorial-is-too-hard/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-constellations-are-my-disciples/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/wbreaker/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/insanely-talented-player/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/kagurabachi/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/how-to-live-as-a-villain/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/children-of-the-rune/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/revenge-of-the-iron-blooded-sword-hound/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/necromancy-solo/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/warrior-return/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/shinketsu-no-kyuuseishu-0-00000001-wo-hikiate-saikyou/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/trait-hoarder/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/boundless-necromancer/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/i-became-the-king-by-scavenging/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-game-that-i-came-from/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/juvenile-prison/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/laws-of-the-good-child/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/academys-genius-sword/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/mc-enrollment/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/swordmasters-youngest-son/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-last-adventurer/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/margraves-bastard-son-was-the-emperor/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/memoir-of-the-god-of-war/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/reborn-as-the-enemy-prince/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-ember-knight/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/one-piece/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/killer-pietro/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/monster-eater-adventurer/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/grand-warlock-streamer/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-strongest-assassin-gets-transferred-to-another-world-with-his-whole-class/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/dungeon-defense/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/doctor-rebirth/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/solo-resurrection/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/your-talent-is-mine/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-executioner/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/ice-lord/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-demon-prince-goes-to-the-academy/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/star-embracing-swordmaster/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/apocalyptic-super-farm/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/foreigner-on-the-periphery/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/dungeon-odyssey/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/player-who-returned-10000-years-later/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/return-of-the-genius-player/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/past-life-returner/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/99-reinforced-wooden-stick/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/death-is-the-only-ending-for-the-villainess/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/apotheosis/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-possessed-genius-gaming-stream/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-max-level-hero-strikes-back/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/player-who-cant-level/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/ill-be-taking-a-break-for-personal-reasons/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/limit-breaker/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/leviathan/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-s-classes-that-i-raised/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/absolute-necromancer/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/my-school-life-pretending-to-be-a-worthless-person/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-returning-devil-lives-a-good-life/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/descent-of-the-demon-master/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/reincarnation-of-the-sword-master/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/mightiest-melee-magician/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/study-group/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/day-walker/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/return-of-the-bloodthirsty-police/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-invincible-man/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/blue-lock/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/worn-and-torn-newbie/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-last-human/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/cultivator-against-hero-society/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/gods-gambit/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/to-hell-with-being-a-saint-im-a-doctor/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/star-of-the-overlord/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-legendary-hunter-becomes-young-again/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/yuan-zun/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/my-daughter-is-the-final-boss/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/infinite-level-up-in-murim/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/why-i-quit-being-the-demon-king/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/sleeping-ranker/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/i-became-a-renowned-familys-sword-prodigy/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/return-of-the-sss-class-demon-lord/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-regressed-s-class-adventurers-quest-life/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/archmage-transcending-through-regression/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/heavenly-demon-cultivation-simulation/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/kill-to-villain/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/how-to-live-as-an-unlicensed-healer/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/ex-and-ash/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-hero-returns/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-wretched/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/level-1-player/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/taming-master/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/volcanic-age/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/rookie-talent-agent-knows-it-all/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/helmut-the-forsaken-child/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/hectopascal/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/designated-bully/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/99-boss/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-beginning-after-the-end/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/into-the-light-once-again/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-heavenly-demon-descendant/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/juice-of-jungle/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-max-level-returner/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/demon-king/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/i-killed-the-immortal/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/hero-of-his-own-opinion/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/eating-player/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/reincarnation-path-of-the-underworld-king/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/winner-takes-all/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/wild-west-murim/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/killing-killer/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/return-survival/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/player-return/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/return-of-the-shattered-constellation/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/estio/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/reaper-of-the-drifting-moon/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/a-returners-magic-should-be-special/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/lout-of-counts-family/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/hyper-luck/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-main-characters-that-only-i-know/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/sons-retribution/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/this-is-the-law/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/tomb-raider-king/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/weak-teacher/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/level-up-with-the-gods/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/a-gate-opened-on-my-first-day-as-a-politician/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/martial-peak/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/is-this-hero-for-real/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-regressors-retirement-life/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/yongsa-high-dungeon-raiders/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/worthless-regression/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-story-of-a-low-rank-soldier/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/return-of-the-mad/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-reincarnated-assassin-is-a-genius-swordsman/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/player-with-hidden-past/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-novels-extra/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-max-level-players-100th-regression/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-lazy-swordmaster/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-great-mage-returns-after-4000-years/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/selena/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/leveling-solo/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/sss-revival-hunter/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/relife-player/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/reincarnation-of-the-battle-god/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-long-way-of-the-warrior/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/legendary-youngest-son-of-the-marquis-house/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-venom-dragon/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/lag-limitless-passive-skills/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/vice-lord/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/game-god/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/existence/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/duke-pendragon/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/damn-reincarnation/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/ending-maker/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-terminally-ill-young-master-of-the-baek-clan/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/the-king-of-snow/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/i-regressed-to-my-ruined-family/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/youngest-scion-of-the-mages/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/kill-the-hero/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/white-blood/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/everyone-regressed-except-me/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/beware-the-villainess/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/f-class-destiny-hunter/",
+      "FullUpdate": false,
+      "SaveImages": false
+    },
+    {
+      "Url": "https://asura-scans.com/series/im-not-that-kind-of-talent/",
+      "FullUpdate": false,
+      "SaveImages": false
+    }
+  ]
+}

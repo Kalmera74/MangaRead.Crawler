@@ -1,0 +1,85 @@
+{
+  "SiteType": "Static",
+  "RootUrl": "https://mangaread.org",
+  "ChapterRootUrl": "https://mangaread.org/manga",
+  "QueryData": {
+    "TitleSelector": [
+      {
+        "Query": "//div[@class='post-title']//h1",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "DescriptionSelector": [
+      {
+        "Query": "//div[contains(@class,'summary__content show-more')]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "CoverSelector": [
+      {
+        "Query": "(//div[@class='summary_image'])//img",
+        "Type": "Single",
+        "DataFrom": "Src"
+      }
+    ],
+    "StatusSelector": [
+      {
+        "Query": "(//div[@class='summary-content'])[8]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "TypeSelector": [
+      {
+        "Query": "(//div[contains(@class,'summary-content')])[7]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "AuthorSelector": [
+      {
+        "Query": "(//div[@class='author-content'])//a",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "RatingSelector": [
+      {
+        "Query": "",
+        "Type": "None",
+        "DataFrom": "None"
+      }
+    ],
+    "GenreSelector": [
+      {
+        "Query": "(//div[contains(@class,'genres-content')])[1]//a",
+        "Type": "Multi",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "ChapterLinksSelector": [
+      {
+        "Query": "//li[@class='wp-manga-chapter    ']//a",
+        "Type": "Multi",
+        "DataFrom": "Href"
+      }
+    ],
+    "ChapterTitlesSelector": [
+      {
+        "Query": "//li[@class='wp-manga-chapter    ']//a",
+        "Type": "Multi",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "ChapterContentsSelector": [
+      {
+        "Query": "(//div[@class='reading-content'])[1]//img",
+        "Type": "Multi",
+        "DataFrom": "Src"
+      }
+    ]
+  },
+  "MangaPages": []
+}
