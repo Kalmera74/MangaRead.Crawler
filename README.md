@@ -1,7 +1,6 @@
 # MangaRead Crawler
 
-This is a generic crawler for manga sites in development. This is not a finished product and I'll be updating it regularly.
-
+This is a generic crawler for manga sites in development. This is not a finished product and I'll be updating it regularly. This project is being develop in conjunction with [MangaRead.Backend](https://github.com/Kalmera74/MangaRead.Backend). However, It can bu adapted to be used on any back-end service easily
 
 ## How To Run Crawler
 
@@ -9,6 +8,7 @@ Crawler reads all the SiteData json files from the config then run each site asy
 To add new sites for crawling, you need to create new site data json and add it to the config file.
 
 To run the project run the following command
+
 ```
 dotnet run --project MangaLuckNeo.Crawler
 ```
@@ -34,17 +34,17 @@ Note that right now Crawler only supports Static sites.
 #### PageData
 
 - **Selector**: A selector is comprise of the following attributes
-    - **Query**: XPath expression used to find the title element in the HTML.
-    - **Type**: `enum` - Indicates if the selector extracts a "Single" or "Multi" result. Multi means that query will return multiple nodes
-    - **DataFrom**: `enum` - Specifies where to extract data from the selected element (e.g., InnerHtml, InnerText, Src, Href, DataBackground, BackgroundImage).
+  - **Query**: XPath expression used to find the title element in the HTML.
+  - **Type**: `enum` - Indicates if the selector extracts a "Single" or "Multi" result. Multi means that query will return multiple nodes
+  - **DataFrom**: `enum` - Specifies where to extract data from the selected element (e.g., InnerHtml, InnerText, Src, Href, DataBackground, BackgroundImage).
 
 This section contains selectors for extracting different types of information from the manga page. Each selector for the PageData field can hold multiple Selectors to cover cases
- where some sites serves non-uniform DOM. For example, TitleSelector could have multiple Selector to query the title of the manga.
+where some sites serves non-uniform DOM. For example, TitleSelector could have multiple Selector to query the title of the manga.
 
 - **TitleSelector**:
 
   - **Type**: `List<Selector>`
-  - **Description**: Contains the query to extract the title of the manga.  
+  - **Description**: Contains the query to extract the title of the manga.
 
 - **DescriptionSelector**:
 
@@ -93,7 +93,7 @@ This section contains selectors for extracting different types of information fr
 
 - **ChapterContentsSelector**:
   - **Type**: `List<Selector>`
-  - **Description**: Contains multiple queries to extract the contents of the chapters, including images and backgrounds.  
+  - **Description**: Contains multiple queries to extract the contents of the chapters, including images and backgrounds.
 
 #### MangaPages
 
@@ -106,9 +106,9 @@ This section defines the specific pages to crawl for manga data.
 
 -**OverrideType**
 
-  - **Type**: `string`
-  - **Default**: `null`
-  - **Description**: It is null by default however if it is filled it'll override the manga type. It is primarily used for sites where they don't have type field on page
+- **Type**: `string`
+- **Default**: `null`
+- **Description**: It is null by default however if it is filled it'll override the manga type. It is primarily used for sites where they don't have type field on page
 
 - **FullUpdate**:
 
