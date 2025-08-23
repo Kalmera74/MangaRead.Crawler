@@ -1,0 +1,8 @@
+using Microsoft.Extensions.Configuration;
+
+public static class ImageClientSettingsService
+{
+    public static string CreateEndpoint => ConfigurationService.GetCrawlConfiguration().GetSection("ClientSettings:ImageClient:Create").Get<string>() ?? string.Empty;
+    public static string GetEndpoint => ConfigurationService.GetCrawlConfiguration().GetSection("ClientSettings:ImageClient:Get").Get<string>() ?? string.Empty;
+    public static string UpdateEndpoint => ConfigurationService.GetCrawlConfiguration().GetSection("ClientSettings:ImageClient:Update").Get<string>() ?? string.Empty;
+}

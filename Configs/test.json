@@ -1,0 +1,96 @@
+{
+  "SiteType": "Static",
+  "RootUrl": "https://mangamanga.com",
+  "ChapterRootUrl": "https://mangamanga.com/series",
+  "QueryData": {
+    "TitleSelector": [
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div/div/div/div/span[1]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "DescriptionSelector": [
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div/div/div/span/p[1]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      },
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div/div/div/span[1]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "CoverSelector": [
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div/div/div/img[1]",
+        "Type": "Single",
+        "DataFrom": "Src"
+      }
+    ],
+    "StatusSelector": [
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div/div/div/div/div/div[1]/h3[2]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "TypeSelector": [
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/h3[2]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "AuthorSelector": [
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div/div/div/div/div[2]/h3[2]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "RatingSelector": [
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div/div/div/div/div/p[1]",
+        "Type": "Single",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "GenreSelector": [
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div/div/div/div[4]/div[1]//button",
+        "Type": "Multi",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "ChapterLinksSelector": [
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div[3]/div[2]//a",
+        "Type": "Multi",
+        "DataFrom": "Href"
+      }
+    ],
+    "ChapterTitlesSelector": [
+      {
+        "Query": "//body/div/div/div/div/div/div/div/div/div[3]/div[2]//a",
+        "Type": "Multi",
+        "DataFrom": "InnerText"
+      }
+    ],
+    "ChapterContentsSelector": [
+      {
+        "Query": "//body/div/div/div/div/div[4]//img",
+        "Type": "Multi",
+        "DataFrom": "Src"
+      }
+    ]
+  },
+  "MangaPages": [
+    {
+      "Url": "https://mangamanga.com/series/exmaple-manga",
+      "FullUpdate": false,
+      "SaveImages": false
+    }
+  ]
+}
