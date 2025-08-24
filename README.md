@@ -1,45 +1,63 @@
-# MangaRead Crawler
+# Manga Read Crawler
 
-This is a generic crawler for manga sites in development. This is not a finished product and I'll be updating it regularly. This project is being develop in conjunction with [MangaRead.Backend](https://github.com/Kalmera74/MangaRead.Backend). However, It can bu adapted to be used on any back-end service easily. It supports all kinds of sites (static, dynamic etc) as well as WebNovel sites. However, currently only static manga sites are implemented, other sites can be implemented easily
+MangaRead Crawler is an extensible, backend-agnostic crawler for manga and web novel sites.  
+It supports static, dynamic, and API-based sites (currently only static support is implemented).
 
-## How To Run Crawler
+This project is developed alongside [MangaRead.Backend](https://github.com/Kalmera74/MangaRead.Backend), but can be easily adapted to any backend service.
 
-Crawler reads all the SiteData json files from the config then run each site asynchronously depending on the settings (if the parallel settings are set to 1 it will run sequentially).
-To add new sites for crawling, you need to create new site data json and add it to the config file.
+---
 
-To run the project run the following command
+## Features
 
-```
+- Crawl static manga sites using XPath
+- Parallel or sequential crawling (configurable concurrency)
+- Fully configurable via JSON (`SiteData.json`, `appsettings.json`)
+- Extensible architecture – new sites can be added without code changes
+- Proxy support
+- Resiliency (Polly)
+- Multiple attribute source support for non-uniform sites
+- Planned support for dynamic & API-based sites
+
+---
+
+##  Quickstart
+
+```bash
+git clone https://github.com/Kalmera74/MangaRead.Crawler
+cd MangaRead.Crawler
 dotnet run
 ```
 
+---
+
+By default, the crawler loads site configurations from Configs/ and runs each crawler asynchronously. It can crawl multiple sites with multiple pages at the same time (they all can be configured)
+
+To add a new site, create a SiteData.json file and reference it in appsettings.json.
+
+---
+
 ## Deployment
 
-Project includes a build script called **build.sh** it will build, deploy and manage the services for the project for you. It basically does the following
+This project includes a `build.sh` script that automates deployment:
 
-1. **Build and Publish the API**
-   The script first cleans any previous builds to avoid conflicts, restores all project dependencies, and compiles the API project. After building, it publishes the compiled output to a specific directory in a format suitable for running in production. This ensures the API is up-to-date and ready to execute.
-
-2. **Database Migrations**
-   Before running the API, the script applies any pending database schema changes using the ORM’s migration system. This ensures that the database structure matches what the API expects, preventing runtime errors due to missing tables or columns.
-
-3. **System Service Setup**
-   The script creates a configuration file for the system’s service manager. This allows the API to run as a background service that automatically starts on system boot, restarts if it crashes, and logs events for monitoring.
-
-4. **Start and Reload Service**
-   Once the service file is created, the script reloads the system manager to recognize the new service, enables it to start on boot, and starts the service immediately. This step ensures the API is running and properly managed by the system.
-
-5. **Command-Line Shortcuts**
-   To make managing the service easier, the script adds aliases to the user’s shell. These shortcuts allow you to quickly check the status, start, stop, or restart the API service without typing long commands.
+1. Builds and publishes the API
+2. Applies database migrations
+3. Configures as a system service (auto-restart, logging)
+4. Starts/reloads the service
+5. Adds CLI shortcuts for management
 
 ## Configuration
 
-### Manga Site Configuration
+Configuration is split across two files:
+
+SiteData.json → Defines how to scrape a specific site (selectors, page data, etc.).
+
+appsettings.json → Defines crawler runtime behavior (concurrency, API settings, proxy, etc.).
+
+## sitedata.json
 
 Each site data json file define how to scrape the corresponding site to get the required manga information as well as the chapter images. Crawler uses Xpath to query the page.
 Note that right now Crawler only supports Static sites.
-
-### sitedata.json
 
 #### SiteType
 
@@ -146,9 +164,7 @@ This section defines the specific pages to crawl for manga data.
   - **Default**: `false`
   - **Description**: Indicates whether to save images found in the manga chapters. Set to `true` if images should be saved locally.
 
-#### Example Configuration
-
-Here’s an example of how the JSON structure may look for a specific manga site:
+## **Example Site Configuration**
 
 ```json
 {
@@ -194,9 +210,9 @@ Here’s an example of how the JSON structure may look for a specific manga site
 }
 ```
 
-### appsettings.json
+## appsettings.json
 
-appsettings.json is used to configure the crawler operation. It is used to configure the concurrency, API and API Clients, and the Site Data Settings json
+appsettings.json is used to configure the crawler operation. It is used to configure the concurrency, API and API Clients,proxy, logging and the Site Data Settings json
 
 #### CrawlSettings
 
@@ -315,6 +331,8 @@ This section contains the endpoints for various clients used in the application.
 - **StatusClient**:
   - **Create**: `string` - Endpoint to create statuses (e.g., `"statuses/"`).
   - **Get**: `string` - Endpoint to get statuses by slug (e.g., `"statuses/slugged/"`).
+
+## **Example Crawl Configuration**
 
 ```json
 {
