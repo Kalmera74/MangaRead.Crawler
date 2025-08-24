@@ -39,12 +39,11 @@ To add a new site, create a SiteData.json file and reference it in appsettings.j
 ## Deployment
 
 This project includes a `build.sh` script that automates deployment:
+1. Builds and publishes the Crawler
+2. Configures as a system service (auto-restart, logging)
+3. Starts/reloads the service
+4. Adds CLI shortcuts for management
 
-1. Builds and publishes the API
-2. Applies database migrations
-3. Configures as a system service (auto-restart, logging)
-4. Starts/reloads the service
-5. Adds CLI shortcuts for management
 
 ## Configuration
 
